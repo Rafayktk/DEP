@@ -1,0 +1,21 @@
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1.2fr 0.8fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header header header"
+      "post-1 post2 post3"
+      "footer footer footer";
+  }
+  
+  .post-1 { grid-area: post-1; }
+  
+  .header { grid-area: header; }
+  
+  .post2 { grid-area: post2; }
+  
+  .post3 { grid-area: post3; }
+  
+  .footer { grid-area: footer; }
+  
